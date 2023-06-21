@@ -1,0 +1,134 @@
+.explore-section {
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(/img/explore-chocolate-first/mobile/Subcribe-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.explore-container {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+.explore-title {
+  font-weight: var(--section-title-font-weight);
+  font-size: var(--mobile-title-font-size);
+  line-height: var(--card-button-text-line-heigh);
+  max-width: 291px;
+  margin-right: auto;
+  margin-left: auto;
+  letter-spacing: var(--mobile-title-letter-spasing);
+
+  color: var(--white-color);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.explore-text {
+  font-weight: var(--secondary-text-card-font-weight);
+  font-size: var(--main-text-font-size);
+  line-height: var(--form-text-line-height);
+
+  text-align: center;
+  letter-spacing: var(--main-text-letter-spacing);
+
+  color: var(--white-color);
+  max-width: 467px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
+}
+.explore-button {
+  font-weight: var(--section-title-font-weight);
+  font-size: var(--main-text-font-size);
+  line-height: var(--main-text-line-height);
+
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 128px;
+  height: 41px;
+  background: var(--orange-color);
+  border-radius: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  transition: background var(--transition), color var(--transition);
+}
+.explore-button:hover,
+.explore-button:focus {
+  background: var(--light-orange-color);
+  color: var(--orange-color);
+}
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .explore-section {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(/img/explore-chocolate-first/mobile/Subcribe-mob@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .explore-section {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(/img/explore-chocolate-first/planshet/Subcribe-tablet.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .explore-section {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(/img/explore-chocolate-first/desctop/Subcribe-desc@2x.png);
+    }
+  }
+  .explore-button {
+    width: 172px;
+    height: 50px;
+    padding: 14px 40px;
+    justify-content: center;
+  }
+  .explore-title {
+    max-width: 378px;
+    font-size: var(--section-title-font-size);
+    font-weight: var(--secondary-text-line-height);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .explore-section {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(/img/explore-chocolate-first/desctop/Subcribe-desc.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .explore-section {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(/img/explore-chocolate-first/desctop/Subcribe-desc@2x.png);
+    }
+  }
+}

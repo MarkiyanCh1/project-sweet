@@ -1,0 +1,218 @@
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (max-width: 768px) and (min-resolution: 192dpi),
+  screen and (max-width: 768px) and (min-resolution: 2dppx) {
+  .subscribe-bacground-img {
+    background-image: url(/img/Subscribe/mobile/chocolate-m@2x.jpg);
+  }
+}
+.subscribe-backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+.subscribe-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 311px;
+  height: 350px;
+  background: var(--white-color);
+  border-radius: 10px;
+  padding-top: 169px;
+}
+.subscribe-bacground-img {
+  width: 311px;
+  height: 169px;
+  background-image: url(/img/Subscribe/mobile/chocolate-mobile.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.subscribe-text {
+  font-weight: var(--mobile-title-font-weight);
+  font-size: var(--mobile-title-font-size);
+  line-height: var(--card-button-text-line-height);
+
+  letter-spacing: var(--mobile-title-letter-spasing);
+  text-transform: uppercase;
+
+  color: var(--main-dark-color);
+  margin-left: auto;
+  margin-right: auto;
+  width: 263px;
+}
+.subscribe-text-span {
+  color: var(--orange-color);
+}
+.subscribe-modal-close-btn {
+  background-color: transparent;
+  position: absolute;
+  top: 31px;
+  right: 31px;
+  z-index: 4;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  transition: background-color var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe-modal-close-btn:hover,
+.subscribe-modal-close-btn:focus {
+  background-color: var(--light-orange-color);
+}
+.subscribe-close-svg {
+  stroke: var(--white-color);
+  width: 16px;
+  height: 16px;
+  transition: stroke var(--transition);
+}
+.subscribe-close-svg:hover,
+.subscribe-close-svg:focus {
+  stroke: var(--orange-color);
+}
+.subscribe-label-input::placeholder {
+  font-weight: var(--card-button-text-font-weight);
+  font-size: var(--main-text-font-size);
+  line-height: var(--main-text-line-heigh);
+
+  display: flex;
+  align-items: center;
+  letter-spacing: var(--secondary-title-letter-spasing);
+
+  color: rgba(64, 64, 64, 0.3);
+}
+.subscribe-label-input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 14px 18px;
+  gap: 40px;
+
+  width: 263px;
+  height: 45px;
+
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 25px;
+  transition: border var(--transition);
+}
+.subscribe-form {
+  padding-top: 24px;
+  padding-left: 24px;
+  display: flex;
+}
+.subscribe-button-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 40px;
+  gap: 14px;
+  isolation: isolate;
+
+  width: 100px;
+  height: 45px;
+  left: 187px;
+
+  background: var(--orange-color);
+  border-radius: 100px;
+  font-weight: var(--mobile-title-font-weigh);
+  font-size: var(--main-text-font-size);
+  line-height: var(--main-text-line-height);
+
+  color: var(--white-color);
+  position: absolute;
+  transition: background var(--transition), color var(--transition);
+}
+.subscribe-button-form:hover,
+.subscribe-button-form:focus {
+  background: var(--light-orange-color);
+  color: var(--orange-color);
+}
+.subscribe-label-input:focus {
+  border: 1.5px solid var(--white-color);
+}
+@media screen and (min-width: 768px) {
+  .subscribe-modal-close-btn {
+    width: 38px;
+    height: 38px;
+  }
+  .subscribe-modal-close-btn:hover,
+  .subscribe-modal-close-btn:focus {
+    background-color: var(--light-orange-color);
+  }
+  .subscribe-close-svg {
+    stroke: var(--white-color);
+    width: 22px;
+    height: 22px;
+  }
+  .subscribe-close-svg:hover,
+  .subscribe-close-svg:focus {
+    stroke: var(--orange-color);
+  }
+  .subscribe-modal {
+    width: 538px;
+    height: 412px;
+    border-radius: 10px;
+    padding-top: 196px;
+  }
+  .subscribe-bacground-img {
+    width: 538px;
+    height: 196px;
+    background-image: url(/img/Subscribe/tablet-desc/chocolate.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .subscribe-bacground-img {
+      background-image: url(/img/Subscribe/tablet-desc/chocolate@2x.jpg);
+    }
+  }
+  .subscribe-text {
+    font-size: var(--section-title-font-size);
+    line-height: var(--section-title-line-height);
+    margin-left: 40px;
+    margin-right: 0;
+    width: 298px;
+  }
+  .subscribe-label-input {
+    width: 313px;
+    height: 52px;
+  }
+  .subscribe-button-form {
+    width: 137px;
+    height: 52px;
+    position: static;
+    margin-left: 8px;
+  }
+  .subscribe-form {
+    display: flex;
+    padding-top: 28px;
+    padding-left: 40px;
+  }
+  .margin-for-text {
+    margin-top: 15px;
+  }
+  .subscribe-label-input::placeholder {
+    font-size: var(--logo-font-size);
+    line-height: var(--card-button-text-line-height);
+
+    color: rgba(64, 64, 64, 0.3);
+  }
+}
+.is-hidden-subscribe {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--transition), visibility var(--transition),
+    pointer-events var(--transition);
+}

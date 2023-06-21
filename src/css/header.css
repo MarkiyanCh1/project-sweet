@@ -1,21 +1,102 @@
-.header {
-  padding: 20px 0;
+.top-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    
+    
+}
+.top-logo{
+    display: flex;
+    align-items: center;
+    font-size: var(--main-text-font-size);
+    font-weight: var(--logo-font-weight);
+    line-height: var(--logo-line-height);
+    letter-spacing: var(--logo-letter-spacing);
+    gap: 4px;
+    
+}
+.top-logo-part-text{
+    font-style: italic;
+}
+.top-nav, .top-sm-list{
+    display: none;
+}
+.mobile-menu-open-btn{
+    background-color: inherit;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.mobile-menu-icon-mob{
+    stroke: var(--main-dark-color);
+    
+}
+.mobile-menu-icon-tablet{
+    display: none;
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+@media screen  and (min-width:768px){
+	.top-container{
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+    .mobile-menu-icon-mob{
+		display: none;
+	}
+	.mobile-menu-icon-tablet{
+		display: block;
+		stroke: var(--main-dark-color);
+	}
+	.mobile-menu-open-btn{
+		width: 32px;
+    	height: 32px;
+	}
+}
+@media screen and (min-width:1200px) {
+	.top-container{
+		padding-bottom: 32px;
+	}
+	.top-logo{
+		font-size: var(--logo-font-size);
+				
+	}
+	.mobile-menu-open-btn{
+		display: none;
+	}
+	.top-nav{
+		display: block;
+		margin-left: auto;
+		margin-right: 137px;
+	}
+	.top-nav-list{
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		font-size: var(--main-text-font-size);
+		font-weight: var(--main-text-font-weight);
+		line-height: var(--header-line-height);
+		letter-spacing: var(--main-text-letter-spacing);
+		color: var(--main-dark-color);
+
+	}
+	.top-sm-list{
+		display: flex;
+		gap: 18px;
+		align-items: center;
+	}
+	.top-sm-link{
+		fill: var(--light-color);
+		stroke: var(--main-dark-color);
+		transition: stroke var(--transition);
+	}
+	.top-sm-link:hover, .top-sm-link:focus{
+		stroke: var(--orange-color);
+	}
+
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
-}

@@ -1,0 +1,97 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.advantages{
+    background:var(--dark-color) ;
+}
+.advantages-container{
+    padding-top: 20px;
+    padding-bottom: 36px;
+}
+.advantages-list{
+    display: flex;
+    flex-wrap: wrap;
+       gap: 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .advantages-container{
+      padding-bottom: 85px;
+      padding-top: 50px;
+    }
+    .advantages-list{
+
+row-gap: 32px;
+column-gap: 60px;
+        }
+}
+@media screen and (min-width: 1200px) {
+	.advantages-container{
+        padding-bottom: 50px;
+    }
+    .advantages-list{
+    flex-wrap: nowrap; 
+    gap: 70px;
+    }
+	}
+  .advantages-icons-box{
+    width: 62px;
+    height: 62px;
+    border: 1px solid var(--light-text-color);
+border-radius: 365px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 22px;
+}
+.advantages-titel{
+
+font-weight: var(--mobile-title-font-weight);
+font-size: var(--secondary-title-font-size);
+line-height: var(--secondary-title-line-height);
+color: var(--white-color);
+margin-bottom: 18px;
+}
+.advantages-txt{
+font-weight: var(--main-text-secondary-font-weight);
+font-size: var(--main-text-font-size);
+line-height: var(--main-text-line-height);
+letter-spacing: var(--main-text-letter-spacing);
+max-width: 308px;
+color:var(--light-text-color);
+
+}
+
+@media screen and (min-width: 1200px) {
+   
+    .advantages-list{
+    justify-content: space-between;
+    }
+    .advantages-list-items:not(:last-child){
+        padding-right: 18px;
+        position: relative;}
+
+.advantages-list-items:not(:last-child)::after{
+    position: absolute;
+    content: '';
+    width: 124px;
+    height: 0;
+    border: 1px solid  rgba(255, 255, 255, 0.5);
+    transform: rotate(270deg) translateY(326px);
+    transform-origin: top left;
+    top: 180px;
+
+
+}}

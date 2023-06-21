@@ -1,0 +1,204 @@
+
+.howmade-container {
+  padding-bottom: 72px;
+}
+@media screen and (min-width: 768px) {
+  .howmade-container {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howmade-container {
+    padding-bottom: 128px;
+  }
+}
+.howmade-titel {
+  font-weight: var(--mobile-title-font-weight);
+  font-size: var(--mobile-title-font-size);
+  line-height: var(--mobile-titile-line-height);
+  text-align: center;
+  letter-spacing: var(--mobile-title-letter-spaсing);
+  text-transform: uppercase;
+  color: var(--main-dark-color);
+  margin-bottom: 32px;
+}
+.howmade-titel-color {
+  color: var(--orange-color);
+}
+@media screen and (min-width: 768px) {
+  .howmade-titel {
+    font-size: var(--section-title-font-size);
+    line-height: var(--section-title-line-height);
+     margin-bottom: 50px;
+  }
+   }
+
+.howmade-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .howmade-box {
+    flex-wrap: nowrap;
+  }
+}
+
+
+.howmade-video {
+  width: 335px;
+  height: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.howmade-video iframe {
+       width: 100%;
+       height: 100%;
+
+    }
+
+    @media screen and (min-width: 768px) {
+      .howmade-video {
+      width: 614px;
+      height: 400px;
+
+      }}
+
+    @media screen and (min-width: 1200px) {
+      .howmade-video {
+       width: 600px;
+      height: 400px;
+
+      }}
+
+/*============== LIST - styles ================= */
+
+.howmade-list{
+list-style: disc outside url("/img/howmade-img/Ellipse\ 1\(1\).svg");
+padding-left: 12px;
+}
+
+.howmade-list-box {
+  max-width: 335px;
+  padding: 20px 14px;
+}
+.howmade-list-titel {
+  font-weight: var(--mobile-title-font-weight);
+  font-size: var(--secondary-title-font-size);
+  line-height: var(--secondary-title-second-line-height);
+  color: var(--main-dark-color);
+  margin-bottom: 20px;
+
+}
+@media screen and (min-width: 768px) {
+  .howmade-list-titel {
+    max-width: 350px;
+    margin-bottom: 28px;
+
+  }
+    .howmade-list-box {
+    max-width: 614px;
+    padding: 32px;
+  }}
+
+@media screen and (min-width: 1200px) {
+    .howmade-list-box {
+   max-width: 516px;
+  }
+}
+
+.howmade-list-items {
+  font-size: var(--main-text-font-size);
+  line-height: var(--logo-line-height);
+  font-weight: var(--secondary-text-card-font-weight);
+  letter-spacing: var(--main-text-letter-spacing);
+   color: var(--main-dark-color);
+}
+
+.howmade-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+@media screen and (min-width: 1200px) {
+    .howmade-list {
+      gap: 24px;
+    }}
+
+.video {
+  padding-bottom:56.25%;
+  position:relative;
+  width: 335px;
+  height: 500px;
+}/*--- bottom (or top) padding sets aspect ratio ---*/
+
+@media screen and (min-width: 768px) {
+  .video {
+  width: 614px;
+  height: 400px;
+
+  }}
+
+@media screen and (min-width: 1200px) {
+  .video {
+    width: 600px;
+  height: 400px;
+
+  }}
+
+/*--- placeholder link & <iframe> (when loaded) ---*/
+.video a, .video iframe {
+  display:block;
+  width:100%;
+  height:100%;
+  position:absolute;
+}
+  .video iframe {
+    border:0
+  }
+
+  /*--- optional custom play button ---*/
+  .video a::before {
+    box-sizing: border-box;
+    display: block;
+    height: 1em;
+    width: 1em;
+    background-color: rgba(0,0,0,0.6);
+    border: 0.05em solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0.15em 0 rgba(0,0,0,0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    font-size: 3em;
+    margin: -0.5em 0 0 -0.5em;
+    transition: background-color .2s;
+    content: "";
+}
+.video a::after {
+  display: block;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-width: 0.2em 0 0.2em 0.3em;
+  border-left-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  font-size: 3em;
+  margin: -0.2em 0 0 -0.1em;
+  content: "";
+}
+
+  /*--- placeholder/preview image ---*/
+  .video img {
+    object-fit:cover;
+    height:100%;
+    width:100%;
+  }

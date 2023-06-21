@@ -1,0 +1,119 @@
+.section-our-products {
+  padding-bottom: 72px;
+}
+
+.title-our-products {
+  font-weight: var(--mobile-title-font-weight);
+  font-size: var(--mobile-title-font-size);
+  line-height: var(--mobile-titile-line-height);
+  letter-spacing: var(--mobile-title-letter-spacing);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 32px;
+  color: var(--main-dark-color);
+}
+
+.current-color-title-our-products {
+  color: var(--orange-color);
+}
+
+.our-products-thumb {
+  overflow: hidden;
+}
+
+.item-our-products {
+  padding: 32px 52px;
+  background: var(--white-color);
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+}
+
+.img-our-products {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-img-our-products {
+  font-weight: var(--mobile-title-font-weight);
+  font-size: var(--secondary-title-font-size);
+  line-height: var(--secondary-title-second-line-height);
+  letter-spacing: var(--secondary-title-letter-spacing);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.description-img-our-products {
+  font-weight: var(--secondary-text-card-font-weight);
+  font-size: var(--secondary-text-font-size);
+  line-height: var(--secondary-text-line-height);
+  letter-spacing: var(--secondary-text-letter-spacing);
+  text-align: center;
+  color: var(--light-dark-text-color);
+  margin-bottom: 18px;
+}
+
+.button-order-our-products {
+  min-width: 94px;
+  height: 33px;
+  padding: 8px 20px;
+  font-weight: var(--button-font-weight);
+  font-size: var(--main-text-font-size);
+  line-height: var(--main-text-line-height);
+  color: var(--main-dark-color);
+  background: var(--light-color);
+  border: 1px solid var(--border-color);
+  border-radius: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.our-products-thumb .swiper-pagination-bullets {
+  display: flex;
+  gap: 13px;
+  justify-content: center;
+  position: relative;
+  margin-top: 28px;
+  transition: translate var(--transition);
+}
+
+.our-products-thumb .swiper-pagination-bullet {
+  box-sizing: content-box;
+  width: 13px;
+  height: 13px;
+  border-radius: 6px;
+  background-color: rgba(17, 17, 17, 0.3);
+  cursor: pointer;
+  transition: translate var(--transition);
+}
+
+.our-products-thumb .swiper-pagination-bullet-active {
+  width: 28px;
+  background-color: var(--orange-color);
+  transition: transform var(--transition);
+}
+
+@media screen and (min-width: 768px) {
+  .our-products-thumb .swiper-pagination-bullets {
+    margin-top: 40px;
+  }
+
+  .section-our-products {
+    padding-bottom: 100px;
+  }
+
+  .title-our-products {
+    font-size: var(--section-title-font-size);
+    margin-bottom: 50px;
+  }
+
+  .item-our-products {
+    padding: 32px 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-our-products {
+    padding-bottom: 128px;
+  }
+}

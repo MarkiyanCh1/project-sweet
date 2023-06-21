@@ -1,0 +1,84 @@
+<div class="review-backdrop is-hidden reviews-data-modal">
+  <div class="review-modal">
+    <button class="review-modal-btn reviews-data-modal-close" type="button">
+      <svg class="review-modal-icon" width="12" height="12">
+        <use href="/img/sprite.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="review-modal-text">
+      leave a review <br class="review-modal-text-mob" />
+      about <br class="review-modal-text-tab" />
+      <span class="review-modal-text-color">our chocolate</span>
+    </h2>
+
+    <form name="call-back" autocomplete="on" class="review-form">
+      <label class="review-form-field" for="name">
+        <input
+          class="review-form-input"
+          type="text"
+          id="name"
+          name="name"
+          required
+          pattern="^([a-zA-Z]{2,})+\s([a-zA-Z]{2,})+$"
+          placeholder=" "
+          title="Username must be two words separated by space"
+        />
+        <span class="review-form-name">Name</span></label
+      >
+
+      <label class="review-form-field" for="mail">
+        <input
+          class="review-form-input"
+          type="email"
+          id="mail"
+          name="mail"
+          required
+          pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+          placeholder=" "
+          title="Example: example@gmail.com"
+        />
+        <span class="review-form-name">Enter your email</span></label
+      >
+
+      <div class="review-form-field select-box">
+        <div class="selected-option">
+          <div>
+            <span class="iconify review-modal-icon-flag" data-icon="flag:ua-4x3"></span>
+            <strong class="review-form-input-border">+380</strong>
+          </div>
+          <input
+            class="review-form-input-phone"
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="^\+([0-9]{1,4})-([0-9]{2})-([0-9]{3})-([0-9]{4})$"
+            required
+            value="+380"
+            placeholder=" "
+            title="Please enter phone number in this format +xxx-xx-xxx-xxxx"
+          >
+          <span class="review-form-name-phone">Phone number</span>
+        </div>
+        <div class="options">
+          <input type="text" class="search-box" placeholder="Search Country Name">
+          <ol>
+
+          </ol>
+        </div>
+      </div>
+
+      <label class="review-form-field" for="comment">
+        <textarea
+          id="comment"
+          name="comment"
+          rows="5"
+          placeholder=" "
+          class="review-form-input-comment"
+        ></textarea>
+        <span class="review-form-name-comment">Enter text</span>
+      </label>
+      <button type="submit" class="review-form-btn-send">Send</button>
+    </form>
+  </div>
+</div>

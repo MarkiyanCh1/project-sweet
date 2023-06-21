@@ -1,0 +1,215 @@
+<!-- BUY NOW MODAL -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-buy-now">
+    <button class="buy-now-close-btn" type="button" data-modal-close>
+      <svg class="buy-now-close-icon" width="14" height="14">
+        <use href="./img/sprite.svg#icon-x-close"></use>
+      </svg>
+    </button>
+    <h1 class="buy-now-header">
+      BUY<span class="buy-now-header-accent"> NOW</span>
+    </h1>
+
+    <!-- CHOCHOLATE BARS -->
+    <ul class="list buy-now-list">
+      <li class="buy-now-list-item">
+        <picture class="buy-now-picture">
+          <source
+            srcset="
+              ./img/buy-now/tablet-desctop/chocolate-bar-tablet-1x.jpg 1x,
+              ./img/buy-now/tablet-desctop/chocolate-bar-tablet@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="
+              ./img/buy-now/mobile/chocolate-bar-mobile-1x.jpg 1x,
+              ./img/buy-now/mobile/chocolate-bar-mobile@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+
+          <img
+            class="buy-now-img"
+            src="./img/buy-now/tablet-desctop/chocolate-bar-tablet-1x.jpg"
+            alt="Kinder chocolate bar"
+            width="120"
+            height="107"
+            loading="lazy"
+          />
+        </picture>
+        <button type="button" class="button buy-now-item-btn">100 g</button>
+      </li>
+      <li class="buy-now-list-item">
+        <picture class="buy-now-picture">
+          <source
+            srcset="
+              ./img/buy-now/tablet-desctop/praline-kinder-tablet-1x.jpg 1x,
+              ./img/buy-now/tablet-desctop/praline-kinder-tablet@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="
+              ./img/buy-now/mobile/praline-kinder-mobile-1x.jpg 1x,
+              ./img/buy-now/mobile/praline-kinder-mobile@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+
+          <img
+            class="buy-now-img"
+            src="./img/buy-now/tablet-desctop/praline-kinder-tablet-1x.jpg,"
+            alt="Praline kinder chocolate"
+            width="120"
+            height="107"
+            loading="lazy"
+          />
+        </picture>
+        <button type="button" class="button buy-now-item-btn">200 g</button>
+      </li>
+      <li class="buy-now-list-item">
+        <picture class="buy-now-picture">
+          <source
+            srcset="
+              ./img/buy-now/tablet-desctop/dark-chocolate-tablet-1x.jpg 1x,
+              ./img/buy-now/tablet-desctop/dark-chocolate-tablet@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="
+              ./img/buy-now/mobile/dark-chocolate-mobile-1x.jpg 1x,
+              ./img/buy-now/mobile/dark-chocolate-mobile@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+
+          <img
+            class="buy-now-img"
+            src="./img/buy-now/tablet-desctop/dark-chocolate-tablet-1x.jpg"
+            alt="Dark chocolate bar"
+            width="120"
+            height="107"
+            loading="lazy"
+          />
+        </picture>
+        <button type="button" class="button buy-now-item-btn">300 g</button>
+      </li>
+    </ul>
+
+    <!-- BUY NOW FORM -->
+    <form class="buy-now-form">
+      <!--USER NAME -->
+      <div class="buy-now-form-item">
+        <fieldset class="buy-now-form-group">
+          <label class="buy-now-form-label" for="user-name"
+            >Personal information</label
+          >
+          <div class="buy-now-input-wrapper">
+            <input
+              class="buy-now-input-item user-name"
+              type="text"
+              id="user-name"
+              name="user-name"
+              required
+              pattern="^[a-zA-Z]+$"
+              minlength="2"
+              placeholder="Name"
+            />
+
+            <input
+              class="buy-now-input-item user-name"
+              type="text"
+              id="user-surname"
+              name="user-surname"
+              required
+              pattern="^[a-zA-Z]+$"
+              minlength="2"
+              placeholder="Surname"
+            />
+          </div>
+        </fieldset>
+      </div>
+
+      <!-- EMAIL -->
+      <div class="buy-now-form-item">
+        <label class="buy-now-form-label" for="user-email">Email</label>
+        <div class="buy-now-input-wrapper">
+          <input
+            class="buy-now-input-item"
+            type="email"
+            id="user-email"
+            name="user-email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            placeholder="Email"
+          />
+        </div>
+      </div>
+
+      <!-- PHONE NUMBER -->
+      <div class="buy-now-form-item">
+        <label class="buy-now-form-label">Phone number</label>
+        <div class="buy-now-input-wrapper">
+          <input
+            class="buy-now-input-item buy-now-input-phone"
+            type="tel"
+            name="user-tel"
+            required
+            pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9][2]"
+            placeholder="Phone number"
+          />
+          <svg class="phone-input-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-ukr"></use>
+          </svg>
+
+          <label for="country" class="visually-hidden">Country</label>
+          <select
+            class="phone-input-code phone-input-country-code"
+            name="country-code"
+            id="country"
+          >
+            <optgroup label="country-code">
+              <option value="+380">+380</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+
+      <!-- CARD NUMBER -->
+      <div class="buy-now-form-item">
+        <label class="buy-now-form-label">Card Number</label>
+        <div class="buy-now-input-wrapper">
+          <input
+            class="buy-now-input-item"
+            type="text"
+            name="card-number"
+            maxlength="16"
+            required
+            placeholder="Enter card"
+          />
+          <svg class="card-input-icon" width="32" height="24">
+            <use href="./img/sprite.svg#icon-mastercard"></use>
+          </svg>
+        </div>
+      </div>
+
+      <!-- COMMENT -->
+      <div class="buy-now-form-item">
+        <label class="buy-now-form-label">Comment</label>
+        <textarea
+          name="user-comment"
+          class="buy-now-message buy-now-input-item"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+      <button type="submit" class="buy-now-submit-btn button" data-modal-close>
+        Submit
+      </button>
+    </form>
+  </div>
+</div>

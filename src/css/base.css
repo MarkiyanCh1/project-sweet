@@ -1,0 +1,81 @@
+:root {
+  --light-color: #fafafa;
+  --balck-color: #000000;
+  --main-dark-color: #111111;
+  --dark-color: #1e1823;
+  --light-orange-color: #fcf1e0;
+  --orange-color: #fd9222;
+  --white-color: #ffffff;
+  --light-text-color: rgba(255, 255, 255, 0.7);
+  --light-dark-text-color: rgba(17, 17, 17, 0.7);
+  --border-color: rgba(17, 17, 17, 0.1);
+  --input-border-color: rgba(17, 17, 17, 0.05);
+  --input-placeholder-color: rgba(64, 64, 64, 0.3);
+  --font-family: 'Montserrat';
+  --logo-font-wight: 700;
+  --logo-line-height: 1.29;
+  --logo-font-size: 18px;
+  --header-line-height: 1.14;
+  --section-title-font-size: 24px;
+  --section-title-letter-spacing: -0.03em;
+  --section-title-line-height: 1.17;
+  --section-title-font-weight: 600;
+  --mobile-title-font-size: 20px;
+  --mobile-title-font-weight: 600;
+  --mobile-titile-line-height: 1.2;
+  --mobile-title-letter-spacing: -0.03em;
+  --hero-footer-main-text-font-size: 28px;
+  --secondary-title-font-size: 18px;
+  --secondary-title-font-weight: 400;
+  --secondary-title-line-height: 1.22;
+  --secondary-title-second-line-height: 1.33;
+  --secondary-title-letter-spacing: -0.02em;
+  --main-text-font-size: 14px;
+  --main-text-font-weight: 500;
+  --main-text-line-height: 1.21;
+  --main-text-letter-spacing: -0.02em;
+  --main-text-secondary-font-weight: 400;
+  --button-font-weight: 600;
+  --form-text-line-height: 1.29;
+  --secondary-text-font-size: 12px;
+  --secondary-text-font-weight: 500;
+  --secondary-text-card-font-weight: 400;
+  --secondary-text-line-height: 1.17;
+  --secondary-text-letter-spacing: -0.02em;
+  --card-button-text-font-size: 10px;
+  --card-button-text-font-weight: 400;
+  --card-button-text-line-height: 1.2;
+  --logo-secondary-line-height: 1.11;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+body {
+  font-family: var(--font-family);
+  background-color: var(--light-color);
+}
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
